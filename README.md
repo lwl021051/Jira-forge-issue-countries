@@ -34,13 +34,7 @@ When viewing an issues, a map will appear below the description of the issue. Us
 6. Select one of more countries from the "Countries" field.
 7. Click the "Refresh" button below the countries map and check the selected countries are highlighted.
 
-## Debugging
 
-You can use the [`forge tunnel`](https://developer.atlassian.com/platform/forge/change-the-frontend-with-forge-ui/#set-up-tunneling) command to run your Forge app locally. 
-
-## License
-
-Copyright (c) 2020 Atlassian and others.
-Apache 2.0 licensed, see [LICENSE](LICENSE) file.
-
-[![From Atlassian](https://raw.githubusercontent.com/atlassian-internal/oss-assets/master/banner-cheers.png)](https://www.atlassian.com)
+![Alt text](image.png)
+1. 由於需要拿取到相關的issue裡的所有field，所以需要透過jira原生api拿到資料
+2. 從api得到的資料中，搜尋所需要的field名稱(Countries)後把當中的id返回主程式作更新動作
